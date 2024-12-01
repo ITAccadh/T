@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Reserve a Table - M's Pizzas</title>
+</head>
+<body>
+
+
+
+  <div id="top-bar">
+    <div id="top-content">
+      <img src="pizza.png" alt="Delicious pizza">
+      <div id="Name">M's Pizzas</div>
+    </div>
+    <div id="nav-options">
+      <a href="index.html" class="nav-link">About Us</a>
+      <a href="order.html" class="nav-link">Order</a>
+      <a href="reserve.html" class="nav-link">Reserve</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+    </div>
+  </div>
+
+  <div id="opening-hours">
+    <p><strong>Opening Hours:</strong> 9:00 AM - 9:00 PM</p>
+  </div>
+  
+
+
+  <div id="reservation-box">
+    <h2>Reserve a Table</h2>
+    <form id="reservation-form">
+      <label for="user-name">Your Name:</label>
+      <input type="text" id="user-name" name="user-name" placeholder="Enter your name" required>
+      
+      <label for="start-time">Start Time:</label>
+      <input type="time" id="start-time" name="start-time" min="09:00" max="21:00" required>
+      
+      <label for="end-time">End Time:</label>
+      <input type="time" id="end-time" name="end-time" min="09:00" max="21:00" required>
+      
+      <button type="button" id="check-availability">Check Availability</button>
+    </form>
+  
+    <div id="message"></div> 
+  
+    <div id="available-tables">
+      <h3>Available Tables</h3>
+      <p>Select a table to reserve:</p>
+      <div id="table-list">
+
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+  <div id="contact-us">
+    <p>Contact Us at: <strong>123-456-7890</strong></p>
+    <p>Visit Us: <strong>123 Pizza Street, Food City, FC 12345</strong></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

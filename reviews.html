@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>M's Pizzas - Reviews</title>
+</head>
+<body>
+
+
+  <div id="top-bar">
+    <div id="top-content">
+      <img src="pizza.png" alt="Delicious pizza">
+      <div id="Name">M's Pizzas</div>
+    </div>
+    <div id="nav-options">
+      <a href="index.html" class="nav-link">About Us</a>
+      <a href="order.html" class="nav-link">Order</a>
+      <a href="reserve.html" class="nav-link">Reserve</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+    </div>
+  </div>
+
+
+  <div id="reviews-section">
+    <h2>Customer Reviews</h2>
+    <div id="review-list"></div>
+
+
+    <h3>Submit Your Review</h3>
+    <form id="review-form">
+      <label for="user-name">Your Name:</label>
+      <input type="text" id="user-name" required>
+
+      <label for="rating">Rating:</label>
+      <select id="rating" required>
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+      </select>
+
+      <label for="review-text">Your Review:</label>
+      <textarea id="review-text" required></textarea>
+
+      <label for="review-image">Upload Image:</label>
+      <input type="file" id="review-image" accept="image/*">
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </div>
+
+  <div id="contact-us">
+    <p>Contact Us at: <strong>123-456-7890</strong></p>
+    <p>Visit Us: <strong>123 Pizza Street, Food City, FC 12345</strong></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

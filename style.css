@@ -1,0 +1,585 @@
+/* Body and background */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('background.jpg');
+  background-size: cover;   
+  background-position: center; 
+  background-attachment: fixed; 
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Blue bar at the top */
+#top-bar {
+  background-color: #003366;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#top-content {
+  display: flex;
+  align-items: center;
+}
+
+#top-content img {
+  height: 80px;
+  margin-right: 15px;
+}
+
+#Name {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Navigation bar */
+#nav-options {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 0 15px;
+  padding: 5px 10px;
+}
+
+.nav-link:hover {
+  background-color: #004d99;
+  border-radius: 5px;
+}
+
+/* About Us Section */
+#about-us {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+#about-us h2 {
+  font-size: 28px;
+  color: #003366;
+}
+
+#about-us p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+#about-us h3 {
+  font-size: 24px;
+  color: #003366;
+  margin-top: 20px;
+}
+
+/* Contact Us Section */
+#contact-us {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #003366;
+}
+
+
+body {
+  transition: background-image 1s ease-in-out;
+}
+
+.nav-link.active {
+  background-color: #004d99;
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+
+
+#reservation-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#reservation-box h2 {
+  font-size: 28px;
+  color: #003366;
+}
+
+#reservation-box form {
+  margin-bottom: 20px;
+}
+
+#reservation-box label {
+  font-size: 18px;
+  color: #333;
+}
+
+#reservation-box input[type="time"] {
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#reservation-box button {
+  background-color: #003366;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#reservation-box button:hover {
+  background-color: #004d99;
+}
+
+#available-tables {
+  margin-top: 20px;
+}
+
+#available-tables h3 {
+  font-size: 24px;
+  color: #003366;
+}
+
+.table-button {
+  background-color: #003366;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.table-button:hover {
+  background-color: #004d99;
+}
+
+#message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+#message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Opening Hours Section */
+#opening-hours {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #003366;
+  font-weight: bold;
+}
+
+
+
+
+
+
+/* Reviews Section */
+#reviews-section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+#reviews-section h2 {
+  font-size: 28px;
+  color: #003366;
+}
+
+#reviews-section h3 {
+  font-size: 24px;
+  color: #003366;
+  margin-top: 20px;
+}
+
+#review-list {
+  margin-bottom: 20px;
+}
+
+.review {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.review .rating {
+  font-size: 18px;
+  color: #FFD700; /* Gold for stars */
+}
+
+.review .name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.review .time {
+  font-size: 14px;
+  color: #888; /* Light grey for time */
+  margin-top: 5px;
+}
+
+.review .review-text {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.review-image {
+  margin-top: 10px;
+  max-width: 100%;
+  max-height: 200px;
+}
+
+#review-form input, #review-form select, #review-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+#review-form button {
+  padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#review-form button:hover {
+  background-color: #004d99;
+}
+
+.review .time {
+  font-size: 14px;
+  color: #888; /* Light grey for time */
+  margin-top: 5px;
+  font-style: italic;
+}
+
+
+
+
+/* Meal Deal Section Styling */
+.meal-deal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);  /* Semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Meal Deal Layout - Image on Left */
+.meal-deal {
+  display: flex;
+  align-items: flex-start;  /* Align items to the top */
+  flex-direction: row; /* Ensure image and text are in a row */
+  gap: 20px; /* Space between the image and text */
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+/* Meal Image - On the Left */
+.meal-image {
+  width: 250px; /* Slightly larger image size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Meal Details */
+.meal-details {
+  max-width: 500px;
+  text-align: left;  /* Align text to the left */
+}
+
+/* Meal Title */
+.meal-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #003366;  /* Dark blue color to match the theme */
+}
+
+/* Meal Description */
+.meal-details p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Quantity Controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-input {
+  width: 60px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+/* Total Price */
+#total-price {
+  font-weight: bold;
+  color: #003366;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Confirm Order Button */
+.confirm-btn {
+  background-color: #003366;
+  color: white;
+  font-size: 16px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.confirm-btn:hover {
+  background-color: #004d99;
+}
+
+/* Modal Specific Styles */
+#meal-selection-modal .modal-content {
+  width: 80%; 
+  max-width: 900px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; 
+  max-height: 80vh; 
+  position: relative; 
+}
+
+#meal-deals-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.modal .meal-deal {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  margin-bottom: 20px; 
+}
+
+.modal .meal-deal h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  text-align: center; /* Center-align the meal deal title */
+}
+
+.modal .meal-deal label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.modal .meal-option {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #003366;
+  color: white;
+  padding: 12px 25px; 
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background-color: #004d99;
+}
+
+/* Close Button */
+.close-btn {
+  font-size: 25px;
+  background: none;
+  border: none;
+  color: #555;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+/* Modal Visibility */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+  justify-content: center;
+  align-items: center;
+  overflow: auto; /* Allow scrolling if content overflows */
+  z-index: 1000; 
+}
+.modal.open {
+  display: flex; 
+  animation: fadeIn 0.3s ease-in-out; 
+}
+
+/* Modal Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Pickup Information Section */
+.pickup-info {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc; 
+}
+
+.pickup-info h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.pickup-info label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.pickup-info input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.pickup-info input:focus {
+  border-color: #003366; 
+}
+
+
+/* Success Message Styles */
+.success-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #d4edda; 
+  color: #155724; 
+  border-radius: 5px;
+  border: 1px solid #c3e6cb;
+  margin-top: 20px;
+}
+
+.success-message h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.success-message p {
+  font-size: 16px;
+}
+
+/* Order Summary Styles */
+.order-summary {
+  padding: 20px;
+  background-color: #f8f9fa; 
+  border-radius: 5px;
+  border: 1px solid #dee2e6;
+  margin-top: 20px;
+}
+
+.order-summary h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.order-summary p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#total-price-container {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #003366;
+}
+
+
+
+
+
+
+
+
+

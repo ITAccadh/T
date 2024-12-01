@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>M's Pizzas - Reviews</title>
+</head>
+<body>
+
+
+  <div id="top-bar">
+    <div id="top-content">
+      <img src="pizza.png" alt="Delicious pizza">
+      <div id="Name">M's Pizzas</div>
+    </div>
+    <div id="nav-options">
+      <a href="index.html" class="nav-link">About Us</a>
+      <a href="order.html" class="nav-link">Order</a>
+      <a href="reserve.html" class="nav-link">Reserve</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+    </div>
+  </div>
+
+
+  <div class="meal-deal-container white-box">
+    <div class="meal-deal">
+      <img src="pizzamealdeal.jpg" class="meal-image" alt="Pizza Meal Deal">
+      <div class="meal-details">
+        <h2>Pizza Meal Deal</h2>
+        <p>1 Pizza, 1 Side, 1 Drink - All for a special price of $19.99!</p>
+
+        <div class="quantity-controls">
+          <input type="number" id="quantity" class="quantity-input" value="0" min="0" step="1">
+        </div>
+
+        <!--price display(dynamic)-->
+        <p>Total Price: $<span id="total-price">0.00</span></p>
+
+        <button id="confirm-order" class="confirm-btn">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="meal-selection-modal" class="modal">
+    <div class="modal-content">
+
+      <button id="close-modal" class="close-btn">Close</button>
+      
+
+      <h2>Meal Selection</h2>
+      
+
+      <div id="meal-deals-container"></div>
+      
+
+      <div class="pickup-info">
+        <h3>Pickup Information</h3>
+        
+
+        <label for="pickup-name">Name:</label>
+        <input type="text" id="pickup-name" name="pickup-name" placeholder="Enter your name" required>
+        
+
+        <label for="pickup-phone">Phone Number:</label>
+        <input type="tel" id="pickup-phone" name="pickup-phone" placeholder="Enter your phone number" required>
+      </div>
+      
+      <div id="total-price-container">
+        <p>Total Price: $<span id="modal-total-price">0.00</span></p>
+      </div>
+      
+
+      <button id="submit-meal-selection" class="submit-btn">Submit</button>
+    </div>
+  </div>
+
+
+  <div id="order-success-message" class="success-message" style="display: none;">
+    <h3>Your pick-up order has been submitted!</h3>
+    <p>We will call you to pick up your order when it is ready.</p>
+  </div>
+
+  <div id="order-summary" class="order-summary" style="display: none;"></div>
+
+
+  <div id="contact-us">
+    <p>Contact Us at: <strong>123-456-7890</strong></p>
+    <p>Visit Us: <strong>123 Pizza Street, Food City, FC 12345</strong></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
